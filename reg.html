@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register page</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <span>username: </span>
+            <input type="text" placeholder="please input username" name="uname">
+        </div>
+        <div>
+            <span>password: </span>
+            <input type="text" placeholder="password" name="upass">
+        </div>
+        <div>
+            <button type="submit" class="subBtn">SUBMIT</button>
+        </div>
+    </form>
+    <script>
+        var subBtn = document.querySelector(".subBtn");
+        subBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+        })
+    </script>
+</body>
+
+</html>
