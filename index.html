@@ -8,7 +8,15 @@
 </head>
 
 <body>
-
+    <div><button class="detailBtn">go to detail page</button></div>
 </body>
+<script>
+    var detailBtn = document.querySelector(".detailBtn");
+    detailBtn.onclick = function () {
+        console.log("yes")
+        window.location.href = "/detail.html"
+    }
+
+</script>
 
 </html>
