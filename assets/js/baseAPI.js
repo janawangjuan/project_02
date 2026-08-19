@@ -6,9 +6,11 @@ $.ajaxPrefilter(function(option){
         }
     }
     option.complete=function(res){
-        if(res.responseJSON.status===1&& res.responseJSON.message==="身份认证失败！"){
+        if(res?.responseJSON?.status===1&& res?.responseJSON?.message==="身份认证失败！"){
             localStorage.removeItem("token");
             window.location.href="/login.html"
+        }else if(res?.status===0 && res?.statusText==='error'){
+            alert("API is error");
         }
 
     }

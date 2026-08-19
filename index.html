@@ -26,9 +26,9 @@
                         <span class="welcome">个人中心</span>
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a href="">基本资料</a></dd>
-                        <dd><a href="">更换头像</a></dd>
-                        <dd><a href="">重置密码</a></dd>
+                        <dd><a href="/user/user_info.html" target="fr">基本资料</a></dd>
+                        <dd><a href="/user/user_avatar.html" target="fr">更换头像</a></dd>
+                        <dd><a href="/user/user_pwd.html" target="fr">重置密码</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
@@ -43,9 +43,9 @@
             <div class="layui-side-scroll">
                 <div class="userInfo">
                     <img src="http://t.cn/RCzsdCq" class="layui-nav-img" />
-                    <span class="text-avatar">A</span> 
-                    <span class="welcome">个人中心</span>
-                    
+                    <span class="text-avatar">A</span>
+                    <span class="welcome">username</span>
+
                 </div>
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
 
@@ -67,9 +67,12 @@
                     <li class="layui-nav-item">
                         <a href="javascript:;"> <span class="iconfont icon-user"></span>个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>基本资料</a> </dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>更换头像</a> </dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>重置密码</a> </dd>
+                            <dd><a href="/user/user_info.html" target="fr"><i
+                                        class="layui-icon layui-icon-app"></i>基本资料</a> </dd>
+                            <dd><a href="/user/user_avatar.html" target="fr"><i
+                                        class="layui-icon layui-icon-app"></i>更换头像</a> </dd>
+                            <dd><a href="/user/user_pwd.html" target="fr"><i
+                                        class="layui-icon layui-icon-app"></i>重置密码</a> </dd>
                         </dl>
                     </li>
                 </ul>
@@ -77,7 +80,8 @@
         </div>
 
         <div class="layui-body">
-            <iframe name="fr" src="/home/dashboard.html" frameborder="0"></iframe>
+            <!-- <iframe name="fr" src="/home/dashboard.html" frameborder="0"></iframe> -->
+            <iframe name="fr" src="/user/user_avatar.html" frameborder="0"></iframe>
         </div>
 
         <div class="layui-footer">
